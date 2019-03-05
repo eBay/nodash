@@ -1,0 +1,61 @@
+{
+  "name": "nodash",
+  "version": "1.0.0",
+  "description": "Replacement for lodash, with fraction of the size.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/*.js",
+    "lint": "./node_modules/.bin/eslint ./",
+    "prepublishOnly": "node scripts/prepublish",
+    "postpublish": "node scripts/postpublish"
+  },
+  "pre-push": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eBay/nodash"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "lodash"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "chrome": 49,
+            "firefox": 48,
+            "safari": 9,
+            "edge": 12,
+            "ie": 11,
+            "opera": 47,
+            "chromeandroid": 38,
+            "ios_saf": 9,
+            "android": 3
+          }
+        }
+      ]
+    ]
+  },
+  "author": "scodavis@ebay.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "chai": "^4.2.0",
+    "del": "^3.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-ebay": "^1.0.0",
+    "mocha": "^5.2.0",
+    "pre-push": "^0.1.1",
+    "sinon": "^7.1.1"
+  },
+  "dependencies": {}
+}

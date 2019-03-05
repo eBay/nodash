@@ -1,0 +1,13 @@
+{
+    "extends": "ebay",
+    "rules": {
+      "arrow-body-style": 0,
+      "no-return-assign": 0,
+      "one-var-declaration-per-line": 2,
+      "no-unused-vars": [2, { "vars": "local", "args": "none"}],
+      "radix": [0, "always"],
+      "quotes": 0,
+      "no-console": 0,
+      "max-len": [2, 120, 2, { "ignoreUrls": true, "ignoreComments": true,  "ignoreTrailingComments": true}]
+    }
+}
