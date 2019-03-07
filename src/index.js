@@ -17,6 +17,7 @@ const partial = require('./partial');
 const partialRight = require('./partialRight');
 const isEqual = require('./isEqual');
 const cloneDeep = require('./cloneDeep');
+const castArray = require('./castArray');
 
 module.exports = {
     get,
@@ -26,5 +27,6 @@ module.exports = {
     partial,
     partialRight,
     isEqual,
-    cloneDeep
+    cloneDeep,
+    castArray
 };
