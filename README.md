@@ -23,6 +23,7 @@ Name | Same as Lodash? | Notes
 `set` | yes | `set(obj, 'path.to[0].value', value)`
 `has` | yes | `has(obj, 'path.to[0].value')`
 `cloneDeep` | yes | `cloneDeep(obj)`
+`castArray` | yes | `castArray(value)`
 `isEmpty` | no | does not support TypedArray or Buffers. `isEmpty(value)`
 `isEqual` | no | only does shallow comparison
 `partial` | yes | `partial(func, param1, param2)`
