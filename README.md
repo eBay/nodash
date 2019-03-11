@@ -12,11 +12,11 @@ npm i @ebay/nodash
 Simply replace `lodash` with `@ebay/nodash`
 
 ```js
-const get = require('lodash/get);
+const get = require('lodash/get');
 
 // becomes
 
-const get = require('@ebay/nodash/get);
+const get = require('@ebay/nodash/get');
 ```
 
 ## Why?
