@@ -1,6 +1,24 @@
 # nodash
 Replacement for subset of lodash, with fraction of the size.
 
+## Installation
+
+```sh
+npm i @ebay/nodash
+```
+
+## Usage
+
+Simply replace `lodash` with `@ebay/nodash`
+
+```js
+const get = require('lodash/get);
+
+// becomes
+
+const get = require('@ebay/nodash/get);
+```
+
 ## Why?
 
 Often, consumers of lodash use just a handful of the methods. Lodash makes this convenient by only requiring what you need:
