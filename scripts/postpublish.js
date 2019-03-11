@@ -16,7 +16,8 @@ const directories = [
     'partial',
     'partialRight',
     'set',
-    'throttle'
+    'throttle',
+    'castArray'
 ];
 
 const pathPrefix = `${ __dirname }/..`;
